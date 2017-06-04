@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+   <servlet> 
+    <!-- 类名 -->  
+    <servlet-name>SessionTrack</servlet-name>
+    <!-- 所在的包 -->
+    <servlet-class>com.souvc.servlet.SessionTrack</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionTrack</servlet-name>
+    <!-- 访问的网址 -->
+    <url-pattern>/SessionTrack</url-pattern>
+  </servlet-mapping>
+
+  
+   <session-config>
+    <session-timeout>15</session-timeout>
+  </session-config>
+  
+</web-app>

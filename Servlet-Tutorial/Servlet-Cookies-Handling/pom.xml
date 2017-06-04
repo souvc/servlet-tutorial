@@ -1,15 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.souvc.servlet </groupId>
-  <artifactId>Servlet-HelloWorld</artifactId>
+  <groupId>com.souvc</groupId>
+  <artifactId>Servlet-Cookies-Handling</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Servlet-HelloWorld Maven Webapp</name>
+  <name>Servlet-Cookies-Handling</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-  
-	    <dependency>
+    
+       <dependency>
 	      <groupId>junit</groupId>
 	      <artifactId>junit</artifactId>
 	      <version>4.12</version>
@@ -20,11 +20,9 @@
 		    <artifactId>servlet-api</artifactId>
 		    <version>2.5</version>
 		</dependency>
-
+    
   </dependencies>
-  
   <build>
-    <finalName>Servlet-HelloWorld</finalName>
+    <finalName>Servlet-Cookies-Handling</finalName>
   </build>
-  
 </project>

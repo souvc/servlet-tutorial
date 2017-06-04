@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+
+     <filter><!-- 指定一个过滤器。 -->
+	  <filter-name>LogFilter</filter-name><!--用于为过滤器指定一个名字，该元素的内容不能为空。 -->
+	  <filter-class>com.souvc.servlet.LogFilter</filter-class><!-- 元素用于指定过滤器的完整的限定类名。 -->
+	  <init-param><!-- 元素用于为过滤器指定初始化参数，它的子元素<param-name>指定参数的名字，<param-value>指定参数的值。 -->
+	    <param-name>Site</param-name>
+	    <param-value>souvc</param-value>
+	  </init-param><!-- 在过滤器中，可以使用FilterConfig接口对象来访问初始化参数。 -->
+	</filter>
+	<filter-mapping>
+	
+	<!--  元素用于设置一个 Filter 所负责拦截的资源。
+	一个Filter拦截的资源可通过两种方式来指定：Servlet 名称和资源访问的请求路径 -->
+	
+	  <filter-name>LogFilter</filter-name><!--  子元素用于设置filter的注册名称。该值必须是在<filter>元素中声明过的过滤器的名字 -->
+	  <url-pattern>/*</url-pattern><!-- 设置 filter 所拦截的请求路径(过滤器关联的URL样式)  -->
+   </filter-mapping>
+
+
+
+    <filter>
+	  <filter-name>AuthenFilter</filter-name>
+	  <filter-class>com.souvc.servlet.AuthenFilter</filter-class>
+	  <init-param>
+	    <param-name>Site</param-name>
+	    <param-value>souvc222</param-value>
+	  </init-param>
+	</filter>
+	<filter-mapping>
+	  <filter-name>AuthenFilter</filter-name>
+	  <url-pattern>/*</url-pattern>
+   </filter-mapping>
+
+
+	<servlet>  
+	  <!-- 类名 -->  
+	  <servlet-name>DisplayHeader</servlet-name>  
+	  <!-- 所在的包 -->  
+	  <servlet-class>com.souvc.servlet.DisplayHeader</servlet-class>  
+	</servlet>  
+	<servlet-mapping>  
+	  <servlet-name>DisplayHeader</servlet-name>  
+	  <!-- 访问的网址 -->  
+	  <url-pattern>/DisplayHeader</url-pattern>  
+	</servlet-mapping>  
+  
+</web-app>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+  <servlet>
+    <servlet-name>PercentageLocale</servlet-name>
+    <servlet-class>com.souvc.servlet.PercentageLocale</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PercentageLocale</servlet-name>
+    <url-pattern>/PercentageLocale</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>CurrencyLocale</servlet-name>
+    <servlet-class>com.souvc.servlet.CurrencyLocale</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CurrencyLocale</servlet-name>
+    <url-pattern>/CurrencyLocale</url-pattern>
+   </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>DateLocale</servlet-name>
+    <servlet-class>com.souvc.servlet.DateLocale</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateLocale</servlet-name>
+    <url-pattern>/DateLocale</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>DisplaySpanish</servlet-name>
+    <servlet-class>com.souvc.servlet.DisplaySpanish</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplaySpanish</servlet-name>
+    <url-pattern>/DisplaySpanish</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>GetLocale</servlet-name>
+    <servlet-class>com.souvc.servlet.GetLocale</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetLocale</servlet-name>
+    <url-pattern>/GetLocale</url-pattern>
+  </servlet-mapping>
+
+  
+</web-app>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+   <servlet>
+		<servlet-name>DatabaseAccess</servlet-name>
+		<servlet-class>com.souvc.servlet.DatabaseAccess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DatabaseAccess</servlet-name>
+		<url-pattern>/DatabaseAccess</url-pattern>
+	</servlet-mapping>
+  
+</web-app>

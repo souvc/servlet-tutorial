@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+  <!-- 使用 GET 方法读取表单数据  -->
+  <servlet>
+    <servlet-name>HelloGetForm</servlet-name>
+    <servlet-class>com.souvc.servlet.HelloGetForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloGetForm</servlet-name>
+    <url-pattern>/HelloGetForm</url-pattern>
+  </servlet-mapping>
+  
+  <!--  使用 POST 方法读取表单数据 -->
+    <servlet>
+    <servlet-name>HelloPostForm</servlet-name>
+    <servlet-class>com.souvc.servlet.HelloPostForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloPostForm</servlet-name>
+    <url-pattern>/HelloPostForm</url-pattern>
+   </servlet-mapping>
+  
+  <!--  将复选框数据传递到 Servlet 程序 -->
+   <servlet>
+    <servlet-name>CheckBox</servlet-name>
+    <servlet-class>com.souvc.servlet.CheckBox</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckBox</servlet-name>
+    <url-pattern>/CheckBox</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 读取所有的表单参数 -->
+   <servlet>
+    <servlet-name>ReadParams</servlet-name>
+    <servlet-class>com.souvc.servlet.ReadParams</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadParams</servlet-name>
+    <url-pattern>/ReadParams</url-pattern>
+  </servlet-mapping>
+
+  
+</web-app>

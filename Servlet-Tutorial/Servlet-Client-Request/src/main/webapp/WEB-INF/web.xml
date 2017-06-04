@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+ <servlet>  
+    <!-- 类名 -->  
+    <servlet-name>DisplayHeader</servlet-name>  
+    <!-- 所在的包 -->  
+    <servlet-class>com.souvc.servlet.DisplayHeader</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>DisplayHeader</servlet-name>  
+    <!-- 访问的网址 -->  
+    <url-pattern>/DisplayHeader</url-pattern>  
+  </servlet-mapping>  
+  
+</web-app>
