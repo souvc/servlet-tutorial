@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.souvc</groupId>
+    <artifactId>servlet-tutorial</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+
+        <jstl.version>1.2</jstl.version>
+        <servlet-api.version>2.5</servlet-api.version>
+        <jsp-api.version>2.0</jsp-api.version>
+        <junit.version>4.12</junit.version>
+
+    </properties>
+
+    <modules>
+
+        <!--Servlet2.5 Hello World 示例代码-->
+        <module>Servlet-HelloWorld</module>
+
+        <!--Servlet3 Hello World 示例代码-->
+        <module>Servlet3-HelloWorld</module>
+
+        <!--Servlet 表单数据-->
+        <module>Servlet-Form</module>
+
+        <module>Servlet-Auto-Refresh</module>
+        <module>Servlet-Client-Request</module>
+        <module>Servlet-Client-Response</module>
+        <module>Servlet-Cookies-Handling</module>
+        <module>Servlet-Database-Access</module>
+        <module>Servlet-Date-Handling</module>
+        <module>Servlet-Exception-Handling</module>
+        <module>Servlet-File-Uploading</module>
+
+
+        <module>Servlet-Filters</module>
+
+        <module>Servlet-Hits-Counter</module>
+        <module>Servlet-Http-Status-Codes</module>
+        <module>Servlet-Internationalization</module>
+        <module>Servlet-Page-Redirect</module>
+        <module>Servlet-Sending-Email</module>
+        <module>Servlet-Session-Handling</module>
+    </modules>
+
+    <name>servlet-tutorial</name>
+    <url>http://souvc.com</url>
+
+    <!--pom文件不提供依赖，子模块相对独立-->
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <finalName>servlet-tutorial</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <!-- 配置Tomcat插件 -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <port>8080</port>
+                    <path>/</path>
+                    <uriEncoding>UTF-8</uriEncoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
