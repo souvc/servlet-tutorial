@@ -23,7 +23,7 @@
 
     <filter>
 	  <filter-name>AuthenFilter</filter-name>
-	  <filter-class>com.souvc.servlet.AuthenFilter</filter-class>
+	  <filter-class>com.souvc.servlet.AuthFilter</filter-class>
 	  <init-param>
 	    <param-name>Site</param-name>
 	    <param-value>souvc222</param-value>

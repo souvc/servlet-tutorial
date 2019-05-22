@@ -5,9 +5,8 @@ import javax.servlet.*;
 /**
  * @author souvc
  */
-public class LogFilter implements Filter {
+public class AuthFilter implements Filter {
 
-    @Override
     public void init(FilterConfig config) {
 
         // 获取初始化参数

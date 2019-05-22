@@ -86,6 +86,9 @@
         <!--Servlet3 获取配置文件-->
         <module>Servlet3-Resource</module>
 
+        <!--Servlet3 filter 实战，xss防攻击 -->
+        <module>Servlet3-Filters</module>
+
     </modules>
 
     <name>servlet-tutorial</name>
@@ -118,35 +121,35 @@
         <plugins>
 
             <!--war包打包策略-->
-           <!-- <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.6</version>
-                <configuration>
-                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <attachClasses>true</attachClasses>
-                    <webResources>
-                        <resource>
-                            <directory>src/main/java</directory>
-                            <targetPath>WEB-INF/classes</targetPath>
-                            <includes>
-                                <include>**/*.xml</include>
-                            </includes>
-                            <excludes>
-                                <exclude>**/*.java</exclude>
-                                <exclude>**/.svn/*</exclude>
-                            </excludes>
-                        </resource>
-                        <resource>
-                            <directory>src/main/resources</directory>
-                            <targetPath>WEB-INF/classes</targetPath>
-                            <includes>
-                                <include>**</include>
-                            </includes>
-                        </resource>
-                    </webResources>
-                </configuration>
-            </plugin>-->
+            <!-- <plugin>
+                 <artifactId>maven-war-plugin</artifactId>
+                 <version>2.6</version>
+                 <configuration>
+                     <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                     <failOnMissingWebXml>false</failOnMissingWebXml>
+                     <attachClasses>true</attachClasses>
+                     <webResources>
+                         <resource>
+                             <directory>src/main/java</directory>
+                             <targetPath>WEB-INF/classes</targetPath>
+                             <includes>
+                                 <include>**/*.xml</include>
+                             </includes>
+                             <excludes>
+                                 <exclude>**/*.java</exclude>
+                                 <exclude>**/.svn/*</exclude>
+                             </excludes>
+                         </resource>
+                         <resource>
+                             <directory>src/main/resources</directory>
+                             <targetPath>WEB-INF/classes</targetPath>
+                             <includes>
+                                 <include>**</include>
+                             </includes>
+                         </resource>
+                     </webResources>
+                 </configuration>
+             </plugin>-->
 
             <!-- 配置Tomcat插件 -->
             <plugin>
