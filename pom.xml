@@ -41,9 +41,10 @@
         <module>Servlet-File-Uploading</module>
         <!--文件下载-->
         <module>Servlet-File-Download</module>
+        <!--Servlet3 文件上传 示例代码-->
+        <module>Servlet3-File-Upload</module>
 
         <module>Servlet-Filters</module>
-
         <module>Servlet-Hits-Counter</module>
         <module>Servlet-Http-Status-Codes</module>
         <module>Servlet-Internationalization</module>
