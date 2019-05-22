@@ -80,7 +80,7 @@
         <!--Servlet 编写过滤器-->
         <module>Servlet-Filters</module>
 
-        <!--Servlet3 filter 实战，xss防攻击 -->
+        <!--Servlet3 filter 过滤器实战，xss防攻击 -->
         <module>Servlet3-Filters</module>
 
         <!--Servlet 点击计数器-->
