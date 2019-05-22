@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Collection;
 
 /**
  * 多文件上传
@@ -32,7 +33,10 @@ public class MuServlet3Upload extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html;charset=utf-8");
         //迭代Collection中所有的Part对象
-        for (Part part : req.getParts()) {
+
+        //Servlet3.0将multipart/form-data的POST请求封装成Part，通过Part对上传的文件进行操作。
+        Collection<Part> parts = req.getParts();
+        for (Part part : parts) {
             if (part.getName().startsWith("file")) {
                 String filename = getFilename(part);
                 part.write(filename);
@@ -51,6 +55,7 @@ public class MuServlet3Upload extends HttpServlet {
      * @return
      */
     private String getFilename(Part part) {
+        //获取请求头的content-disposition,格式：form-data; name="file"; filename="file.txt"
         String header = part.getHeader("Content-Disposition");
         String filename = header.substring(header.indexOf("filename=\"") + 10, header.lastIndexOf("\""));
         return filename;
