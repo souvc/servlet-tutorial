@@ -62,12 +62,6 @@
         <!--Servlet3 文件上传 示例代码-->
         <module>Servlet3-File-Upload</module>
 
-        <!--Servlet 编写过滤器-->
-        <module>Servlet-Filters</module>
-
-        <!--Servlet 点击计数器-->
-        <module>Servlet-Hits-Counter</module>
-
         <!--Servlet 国际化-->
         <module>Servlet-Internationalization</module>
 
@@ -77,17 +71,26 @@
         <!--Servlet 发送电子邮件-->
         <module>Servlet-Sending-Email</module>
 
-        <!--Servlet Session 跟踪-->
-        <module>Servlet-Session-Handling</module>
-
-        <!--Servlet生成验证码-->
+        <!--Servlet 生成验证码-->
         <module>Servlet-IdentifyingCode</module>
 
         <!--Servlet3 获取配置文件-->
         <module>Servlet3-Resource</module>
 
+        <!--Servlet 编写过滤器-->
+        <module>Servlet-Filters</module>
+
         <!--Servlet3 filter 实战，xss防攻击 -->
         <module>Servlet3-Filters</module>
+
+        <!--Servlet 点击计数器-->
+        <module>Servlet-Hits-Counter</module>
+
+        <!--Servlet3 监听器 -->
+        <module>Servlet3-Listener</module>
+
+        <!--Servlet Session 跟踪-->
+        <module>Servlet-Session-Handling</module>
 
     </modules>
 

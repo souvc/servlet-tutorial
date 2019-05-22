@@ -8,6 +8,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 页面点击
+ * @author souvc
+ */
 public class PageHitCounter extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;

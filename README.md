@@ -73,6 +73,12 @@
 <!--Servlet生成验证码-->
 <module>Servlet-IdentifyingCode</module>
 
+<!--Servlet3 获取配置文件-->
+<module>Servlet3-Resource</module>
+
+<!--Servlet3 filter 实战，xss防攻击 -->
+<module>Servlet3-Filters</module>
+
 ```
 
 
